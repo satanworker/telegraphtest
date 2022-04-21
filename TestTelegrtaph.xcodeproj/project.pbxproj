@@ -14,6 +14,10 @@
 		67B869302811763A00770EA7 /* TestTelegrtaphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B8692F2811763A00770EA7 /* TestTelegrtaphTests.swift */; };
 		67B8693A2811763A00770EA7 /* TestTelegrtaphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B869392811763A00770EA7 /* TestTelegrtaphUITests.swift */; };
 		67B8693C2811763A00770EA7 /* TestTelegrtaphUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B8693B2811763A00770EA7 /* TestTelegrtaphUITestsLaunchTests.swift */; };
+		67B869492811766400770EA7 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B869482811766400770EA7 /* URLSession.swift */; };
+		67B8694C281176BE00770EA7 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 67B8694A281176BE00770EA7 /* cert.der */; };
+		67B8694D281176BE00770EA7 /* filename.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 67B8694B281176BE00770EA7 /* filename.p12 */; };
+		67B86950281176DD00770EA7 /* Telegraph in Frameworks */ = {isa = PBXBuildFile; productRef = 67B8694F281176DD00770EA7 /* Telegraph */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		67B869352811763A00770EA7 /* TestTelegrtaphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTelegrtaphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B869392811763A00770EA7 /* TestTelegrtaphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTelegrtaphUITests.swift; sourceTree = "<group>"; };
 		67B8693B2811763A00770EA7 /* TestTelegrtaphUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTelegrtaphUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67B869482811766400770EA7 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		67B8694A281176BE00770EA7 /* cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.der; sourceTree = "<group>"; };
+		67B8694B281176BE00770EA7 /* filename.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = filename.p12; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B86950281176DD00770EA7 /* Telegraph in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +102,13 @@
 		67B8691D2811763900770EA7 /* TestTelegrtaph */ = {
 			isa = PBXGroup;
 			children = (
+				67B8694A281176BE00770EA7 /* cert.der */,
+				67B8694B281176BE00770EA7 /* filename.p12 */,
 				67B8691E2811763900770EA7 /* TestTelegrtaphApp.swift */,
 				67B869202811763900770EA7 /* ContentView.swift */,
 				67B869222811763A00770EA7 /* Assets.xcassets */,
 				67B869242811763A00770EA7 /* Preview Content */,
+				67B869482811766400770EA7 /* URLSession.swift */,
 			);
 			path = TestTelegrtaph;
 			sourceTree = "<group>";
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = TestTelegrtaph;
+			packageProductDependencies = (
+				67B8694F281176DD00770EA7 /* Telegraph */,
+			);
 			productName = TestTelegrtaph;
 			productReference = 67B8691B2811763900770EA7 /* TestTelegrtaph.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 67B869122811763900770EA7;
+			packageReferences = (
+				67B8694E281176DD00770EA7 /* XCRemoteSwiftPackageReference "Telegraph" */,
+			);
 			productRefGroup = 67B8691C2811763900770EA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B8694C281176BE00770EA7 /* cert.der in Resources */,
 				67B869262811763A00770EA7 /* Preview Assets.xcassets in Resources */,
+				67B8694D281176BE00770EA7 /* filename.p12 in Resources */,
 				67B869232811763A00770EA7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +278,7 @@
 			files = (
 				67B869212811763900770EA7 /* ContentView.swift in Sources */,
 				67B8691F2811763900770EA7 /* TestTelegrtaphApp.swift in Sources */,
+				67B869492811766400770EA7 /* URLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestTelegrtaph/Preview Content\"";
+				DEVELOPMENT_TEAM = L8HQEXF796;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestTelegrtaph/Preview Content\"";
+				DEVELOPMENT_TEAM = L8HQEXF796;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67B8694E281176DD00770EA7 /* XCRemoteSwiftPackageReference "Telegraph" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Building42/Telegraph";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67B8694F281176DD00770EA7 /* Telegraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67B8694E281176DD00770EA7 /* XCRemoteSwiftPackageReference "Telegraph" */;
+			productName = Telegraph;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67B869132811763900770EA7 /* Project object */;
 }
